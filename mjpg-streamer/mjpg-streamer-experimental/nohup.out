@@ -1,0 +1,27 @@
+MJPG Streamer Version: git rev: 0630278d14d6b763b866508e1ce1d07cee098b7a
+ i: fps.............: 5
+ i: resolution........: 640 x 480
+ i: camera parameters..............:
+
+Sharpness 0, Contrast 0, Brightness 50
+Saturation 0, ISO 0, Video Stabilisation No, Exposure compensation 0
+Exposure Mode 'auto', AWB Mode 'auto', Image Effect 'none'
+Metering Mode 'average', Colour Effect Enabled No with U = 128, V = 128
+Rotation 0, hflip No, vflip No
+ROI x 0.000000, y 0.000000, w 1.000000 h 1.000000
+ o: www-folder-path......: disabled
+ o: HTTP TCP port........: 8081
+ o: HTTP Listen Address..: (null)
+ o: username:password....: disabled
+ o: commands.............: enabled
+ i: Starting Camera
+Encoder Buffer Size 81920
+setting signal to stop
+setting signal to stop
+setting signal to stop
+setting signal to stop
+force cancellation of threads and cleanup resources
+ o: cleaning up resources allocated by server thread #00
+force cancellation of threads and cleanup resources
+force cancellation of threads and cleanup resources
+done
