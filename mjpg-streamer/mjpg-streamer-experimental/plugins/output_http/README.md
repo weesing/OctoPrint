@@ -25,27 +25,27 @@ Browser/VLC
 
 To view the stream use VLC or Firefox/Chrome and open the URL:
 
-    http://127.0.0.1:8080/?action=stream
+    http://127.0.0.1:8081/?action=stream
 
 If there are multiple input plugins, you can access each stream individually:
 
-    http://127.0.0.1:8080/?action=stream_0
-    http://127.0.0.1:8080/?action=stream_1
+    http://127.0.0.1:8081/?action=stream_0
+    http://127.0.0.1:8081/?action=stream_1
 
 To do the same as the GET request above using NSURLSession in Objective-C, a POST request seems to work: 
 
-    POST http://127.0.0.1:8080/stream 
+    POST http://127.0.0.1:8081/stream 
 
 To view a single JPEG just open this URL:
 
-    http://127.0.0.1:8080/?action=snapshot
+    http://127.0.0.1:8081/?action=snapshot
 
 mplayer
 -------
 
 To play the HTTP M-JPEG stream with mplayer:
 
-    # mplayer -fps 30 -demuxer lavf "http://127.0.0.1:8080/?action=stream&ignored.mjpg"
+    # mplayer -fps 30 -demuxer lavf "http://127.0.0.1:8081/?action=stream&ignored.mjpg"
 
 It might be necessary to configure mplayer to prefer IPv4 instead of IPv6:
 
