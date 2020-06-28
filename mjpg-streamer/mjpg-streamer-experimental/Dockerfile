@@ -1,6 +1,6 @@
 FROM ubuntu
 
-RUN apt update && apt-upgrade
+RUN apt-get update && apt-get upgrade
 RUN apt install git subversion libjpeg62-turbo-dev imagemagick ffmpeg libv4l-dev cmake
 
 LABEL Description="A Docker image for mjpg_streamer." Version="0.3"
