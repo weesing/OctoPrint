@@ -6,7 +6,7 @@ After=network.target
 User=pi
 WorkingDirectory="/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental"
 Environment="LD_LIBRARY_PATH=/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental"
-ExecStart=/usr/bin/mjpg_streamer -i "input_raspicam.so -fps 5" -o "output_http.so"
+ExecStart=/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer -i "/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/input_raspicam.so -fps 5" -o "/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/output_http.so"
 
 [Install]
 WantedBy=multi-user.target
