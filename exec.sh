@@ -14,7 +14,7 @@ wget https://github.com/foosel/OctoPrint/raw/master/scripts/octoprint.init && su
 wget https://github.com/foosel/OctoPrint/raw/master/scripts/octoprint.default && sudo mv octoprint.default /etc/default/octoprint
 sudo chmod +x /etc/init.d/octoprint
 
-sudo cp config/octoprint /etc/default/
+sudo cp ./config/octoprint /etc/default/
 
 sudo systemctl enable octoprint
 sudo systemctl start octoprint
