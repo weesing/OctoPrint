@@ -26,7 +26,8 @@ sudo systemctl start haproxy
 
 sudo apt install subversion libjpeg62-turbo-dev imagemagick ffmpeg libv4l-dev cmake
 git clone https://github.com/jacksonliam/mjpg-streamer.git
-cd mjpg-streamer && rm -rf .git
+pushd mjpg-streamer && rm -rf .git
+popd
 
 pushd mjpg-streamer/mjpg-streamer-experimental
 export LD_LIBRARY_PATH=.
