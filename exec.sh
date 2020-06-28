@@ -34,4 +34,4 @@ cd mjpg-streamer/mjpg-streamer-experimental
 export LD_LIBRARY_PATH=.
 make
 
-export MJPG_STREAMER_FILE_PATH=~/octoprint/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer.sh
+sudo adduser --system --ingroup video mjpg_streamer
