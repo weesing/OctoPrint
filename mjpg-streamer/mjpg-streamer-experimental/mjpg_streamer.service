@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=pi
-Environment="LD_LIBRARY_PATH=/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental"
+Environment="LD_LIBRARY_PATH=/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/"
 ExecStart=/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/mjpg_streamer -i "/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/input_raspicam.so -fps 5" -o "/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental/output_http.so"
 
 [Install]
