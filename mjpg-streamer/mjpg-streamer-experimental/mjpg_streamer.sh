@@ -1,0 +1,1 @@
+$MJPG_STREAMER_FILE_PATH/mjpg_streamer -i "./input_raspicam.so -fps 5" -o "./output_http.so"
