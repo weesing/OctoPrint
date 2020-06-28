@@ -26,13 +26,13 @@ sudo cp config/haproxy.cfg /etc/haproxy/
 sudo systemctl enable haproxy
 sudo systemctl start haproxy
 
-# sudo apt install subversion libjpeg62-turbo-dev imagemagick ffmpeg libv4l-dev cmake
-# git clone https://github.com/jacksonliam/mjpg-streamer.git
-# cd mjpg-streamer && rm -rf .git
+sudo apt install subversion libjpeg62-turbo-dev imagemagick ffmpeg libv4l-dev cmake
+git clone https://github.com/jacksonliam/mjpg-streamer.git
+cd mjpg-streamer && rm -rf .git
 
-# pushd mjpg-streamer/mjpg-streamer-experimental
-# export LD_LIBRARY_PATH=.
-# make
+pushd mjpg-streamer/mjpg-streamer-experimental
+export LD_LIBRARY_PATH=.
+make
 
 # sudo cp mjpg_streamer /usr/bin
 # sudo chmod u+x /usr/bin/mjpg_streamer
@@ -42,5 +42,8 @@ sudo systemctl start haproxy
 # sudo systemctl start mjpg_streamer
 # sudo systemctl enable mjpg_streamer
 # sudo systemctl daemon-reload
-
 # sudo adduser --system --ingroup video mjpg_streamer
+
+nohup ./mjpg_streamer -i "./input_raspicam.so -fps 5" -o "./output_http.so"
+
+popd
