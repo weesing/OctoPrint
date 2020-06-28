@@ -13,7 +13,7 @@ echo "DONE"
 # echo "DONE"
 
 echo "Starting container..."
-docker run --name mjpg-streamer  -d -t -i -p 8081:8081/tcp --device=/dev/video0 image:tag
+docker run --name mjpg-streamer  -d -t -i -p 8081:8081/tcp --device=/dev/video0 weesing/mjpg-streamer:latest
 echo "DONE"
 
 docker logs -f mjpg-streamer
