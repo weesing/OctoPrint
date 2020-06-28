@@ -3,7 +3,9 @@ Description=A server for streaming Motion-JPEG from a video capture device
 After=network.target
 
 [Service]
-User=mjpg_streamer
+User=pi
+WorkingDirectory="/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental"
+Environment="LD_LIBRARY_PATH=/home/pi/octoprint/mjpg-streamer/mjpg-streamer-experimental"
 ExecStart=/usr/bin/mjpg_streamer -i "input_raspicam.so -fps 5" -o "output_http.so"
 
 [Install]
