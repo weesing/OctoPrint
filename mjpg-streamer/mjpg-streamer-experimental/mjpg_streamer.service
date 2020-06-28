@@ -6,6 +6,7 @@ After=network.target
 [Service]
 User=mjpg_streamer
 ExecStart=/usr/bin/mjpg_streamer -i "./input_raspicam.so -fps 5" -o "./output_http.so"
+Environment=LD_LIBRARY_PATH=~/octoprint/mjpg-streamer/mjpg-streamer-experimental/
 
 [Install]
 WantedBy=multi-user.target
