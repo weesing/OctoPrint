@@ -1,5 +1,0 @@
-[Unit]
-Description=MJPG Streamer service
-
-[Service]
-ExecStart=${MJPG_STREAMER_FILE_PATH}
