@@ -1,4 +1,3 @@
-cd ~
 sudo apt update
 sudo apt install python-pip python-dev python-setuptools python-virtualenv git libyaml-dev build-essential
 virtualenv venv
