@@ -8,9 +8,11 @@ pip install octoprint
 sudo usermod -a -G tty pi
 sudo usermod -a -G dialout pi
 
-wget https://github.com/foosel/OctoPrint/raw/master/scripts/octoprint.init && sudo mv octoprint.init /etc/init.d/octoprint
-wget https://github.com/foosel/OctoPrint/raw/master/scripts/octoprint.default && sudo mv octoprint.default /etc/default/octoprint
-sudo chmod +x /etc/init.d/octoprint
+# wget https://github.com/foosel/OctoPrint/raw/master/scripts/octoprint.init && sudo mv octoprint.init /etc/init.d/octoprint
+# wget https://github.com/foosel/OctoPrint/raw/master/scripts/octoprint.default && sudo mv octoprint.default /etc/default/octoprint
+# sudo chmod +x /etc/init.d/octoprint
+
+wget https://github.com/OctoPrint/OctoPrint/raw/master/scripts/octoprint.service && sudo mv octoprint.service /etc/systemd/system/octoprint.service
 
 sudo cp ./config/octoprint /etc/default/
 
